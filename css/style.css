@@ -508,6 +508,7 @@ hr.hr {
 
 .hero {
   position: relative;
+  height: 100vh;
 }
 .hero .author-img {
   position: absolute;
