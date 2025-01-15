@@ -286,7 +286,7 @@ header {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #272936;
+  background-color: #28bfab;
   transition: all 100ms ease-in-out;
 }
 .header .hamburger .bar::before, .header .hamburger .bar::after {
@@ -295,7 +295,7 @@ header {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: #272936;
+  background-color: #28bfab;
   transition: all 0.2s ease;
 }
 .header .hamburger .bar::before {
@@ -313,11 +313,13 @@ header {
   top: 0;
   transform: rotate(45deg);
   transition: all 0.2s ease;
+  background-color: #fff;
 }
 .header .hamburger .rotate::after {
   top: 0;
   transform: rotate(-45deg);
   transition: all 0.2s ease;
+  background-color: #fff;
 }
 @media (min-width: 992px) {
   .header .hamburger {
@@ -332,7 +334,7 @@ header {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #ddd;
+  background-color: #28bfab;
   width: 250px;
   height: 100vh;
   transform: translateX(100%);
@@ -349,21 +351,19 @@ header {
 }
 .header .mobile-menu .list-container .list-item {
   text-align: center;
-  text-transform: uppercase;
   padding: 10px 15px;
 }
 .header .mobile-menu .list-container .list-item a {
   width: 100%;
   color: #fff;
-  font-size: 14px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: underline;
   border-radius: 0;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.header .mobile-menu .list-container .list-heading {
-  background-color: #28bfab;
-}
-.header .mobile-menu .list-container .list-heading:hover {
-  background-color: #435979;
+.header .mobile-menu .list-container .list-item a:hover {
+  color: #272936;
 }
 .header .menu {
   display: none;
@@ -407,9 +407,6 @@ header {
 .active-mobile {
   background-color: #28bfab;
   border-radius: 5px;
-}
-.active-mobile:hover {
-  background-color: #27a897;
 }
 
 .container {
