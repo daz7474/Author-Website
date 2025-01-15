@@ -130,7 +130,7 @@ hr.hr {
       }
     }
 
-    & .item-content {
+    & .hero-item-content {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -138,9 +138,15 @@ hr.hr {
       width: 100%;
       color: $light-black;
 
+      & .subheading {
+        font-size: 18px;
+        text-decoration: underline;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+
       & h2 {
         font-size: 32px;
-        color: $light-black !important;
         text-align: center;
 
         @include mq('sm') {
@@ -170,6 +176,7 @@ hr.hr {
 
     @include mq('md') {
       flex-direction: row;
+      padding-top: 50px;
     }
   }
   @include mq('md') {
@@ -191,12 +198,11 @@ hr.hr {
   & .subheading {
     font-size: 18px;
     text-decoration: underline;
-    margin: 0;
+    margin-bottom: 15px;
   }
 
   & h2 {
     font-size: 32px;
-    color: $light-black !important;
   }
 
   & p {
@@ -224,11 +230,12 @@ hr.hr {
   & .about-img-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
 
     & img {
-      width: 100%;
-      height: 100%;
+      width: 80%;
+      height: 80%;
       object-fit: contain;
     }
 
@@ -239,6 +246,57 @@ hr.hr {
 
   @include mq('md') {
     flex-direction: row;
+  }
+}
+
+.books {
+
+  & .book-content {
+    & h2 {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+
+  & .book-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+
+    & .book-img-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: auto;
+      margin: 10px;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      & .buy-btn {
+        margin-top: 10px;
+
+        p {
+          margin: 0;
+        }
+      }
+
+      @include mq('md') {
+        width: 50%;
+      }
+    }
+
+    @include mq('md') {
+      flex-direction: row;
+    }
   }
 }
 
