@@ -4,7 +4,7 @@
 const menuBtn = document.querySelector(".hamburger");
 const mobileMenu = document.querySelector(".mobile-menu");
 const burgerBar = document.querySelector(".bar");
-const menulink = document.querySelectorAll(".mobile-menu div a");
+const menulink = document.querySelectorAll(".mobile-menu a");
 const body = document.querySelector("body");
 
 // On click, toggles class "side-menu-open" to show/hide
