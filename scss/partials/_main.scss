@@ -178,8 +178,12 @@ hr.hr {
         }
       }
 
-      & .buy-btn p {
-        margin: 0;
+      & .buy-btn {
+        margin: auto;
+
+        p {
+          margin: 0;
+        }
       }
 
       @include mq('md') {
