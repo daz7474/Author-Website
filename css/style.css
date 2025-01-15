@@ -749,4 +749,16 @@ hr.hr {
   }
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #28bfab;
+  text-align: center;
+}
+footer h2, footer p {
+  color: #fff !important;
+}
+
 /*# sourceMappingURL=style.css.map */
