@@ -729,6 +729,9 @@ hr.hr {
   font-size: 32px;
   text-align: center;
 }
+.contact .contact-content p {
+  text-align: center;
+}
 
 .flex-container {
   display: flex;
