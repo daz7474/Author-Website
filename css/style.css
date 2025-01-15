@@ -529,6 +529,7 @@ hr.hr {
   position: relative;
   width: 100%;
   min-height: 400px;
+  padding: 20px 0;
 }
 .hero .item .img-container {
   display: flex;
@@ -593,6 +594,12 @@ hr.hr {
   .hero .item {
     flex-direction: row;
     padding-top: 50px;
+  }
+}
+@media (min-width: 1260px) {
+  .hero .item {
+    flex-direction: row;
+    padding-top: 100px;
   }
 }
 @media (min-width: 992px) {

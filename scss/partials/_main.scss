@@ -111,6 +111,7 @@ hr.hr {
     position: relative;
     width: 100%;
     min-height: 400px;
+    padding: 20px 0;
 
     & .img-container {
       display: flex;
@@ -177,6 +178,11 @@ hr.hr {
     @include mq('md') {
       flex-direction: row;
       padding-top: 50px;
+    }
+
+    @include mq('lg') {
+      flex-direction: row;
+      padding-top: 100px;
     }
   }
   @include mq('md') {
