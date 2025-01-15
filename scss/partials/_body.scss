@@ -1,0 +1,143 @@
+// Body
+
+// Global
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+// Body
+
+body {
+  font-family: $font-primary;
+  font-size: 16px;
+  letter-spacing: .4px;
+  color: $dark-grey;
+  overflow-x: hidden;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.h1,
+h1 {
+  font-family: $font-secondary;
+  font-size: 36px;
+  font-weight: 400;
+  margin: 0 0 28px;
+}
+
+.h2,
+h2 {
+  font-family: $font-secondary;
+  color: $primary-alt-color !important;
+  font-size: 30px;
+
+  @include mq('sm') {
+    font-size: 38px;
+  }
+
+  @include mq('md') {
+    font-size: 48px;
+  }
+}
+
+.h2,
+.h3,
+.h4,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  margin: 0 0 15px;
+}
+
+.h3,
+.h4,
+h3,
+h4 {
+  font-size: 20px;
+}
+
+.h3,
+h3 {
+  font-size: 26px;
+}
+
+.h4,
+h4 {
+  font-size: 16px;
+}
+
+p {
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+
+.small,
+small {
+  display: block;
+  font-size: 10px;
+  padding-bottom: 1px;
+  margin-bottom: 5px;
+}
+
+// Link
+
+a {
+  text-decoration: none;
+  color: $light-black;
+}
+
+// List
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+// Form elements
+
+input,
+textarea {
+  display: block;
+  padding: 15px;
+  width: 100%;
+  outline: 0;
+  border: 0;
+}
+
+// Button
+
+button {
+  outline: 0;
+  border: none;
+  background: none;
+}
+
+// SVG
+
+svg {
+  margin-bottom: -25px;
+
+  @include mq("sm") {
+    margin-bottom: -70px;
+  }
+
+  @include mq("md") {
+    margin-bottom: -100px;
+  }
+
+  @include mq("lg") {
+    margin-bottom: -130px;
+  }
+}

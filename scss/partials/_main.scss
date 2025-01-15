@@ -1,0 +1,204 @@
+// Main
+
+// Containers
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @include mq('sm') {
+    width: 750px;
+  }
+
+  @include mq('md') {
+    width: 970px;
+  }
+
+  @include mq('lg') {
+    width: 1200px;
+  }
+}
+
+// Utilities
+
+.debug {
+  border: 1px solid red;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.centered {
+  text-align: center;
+}
+
+.mt {
+  margin-top: 50px;
+}
+
+.mb {
+  margin-bottom: 50px;
+}
+
+hr.hr {
+  border-top: 1px solid #EEEEEE;
+  border-bottom: 1px solid #EEEEEE;
+  margin-bottom: 40px;
+}
+
+// Headings
+
+.text-primary {
+  color: $primary-brand-color;
+}
+
+.text-secondary {
+  color: $secondary-brand-color;
+}
+
+.section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+// Links
+
+.link {
+  color: $primary-brand-color;
+}
+
+// Slick Dots
+
+.slick-dots {
+  margin-bottom: 32px;
+
+  & li button:before {
+    font-size: 12px;
+    color: $light-grey;
+  }
+
+  & li.slick-active button:before {
+    color: $white;
+  }
+}
+
+// Hero Banner
+
+.hero {
+  position: relative;
+
+  & .author-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+
+    & .img-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 20px;
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @include mq('md') {
+        width: 50%;
+        margin-bottom: 0;
+      }
+    }
+
+    & .item-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 100%;
+      width: 100%;
+      color: $light-black;
+
+      & h2 {
+        font-size: 32px;
+        color: $light-black !important;
+        text-align: center;
+
+        @include mq('sm') {
+          font-size: 42px;
+        }
+
+        @include mq('md') {
+          font-size: 52px;
+        }
+      }
+
+      & p {
+        @include mq('md') {
+          font-size: 16px;
+        }
+      }
+
+      & .buy-btn p {
+        margin: 0;
+      }
+
+      @include mq('md') {
+        width: 50%;
+        margin: 0 50px;
+      }
+    }
+
+    @include mq('md') {
+      flex-direction: row;
+    }
+  }
+}
+
+// Flex Items
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+
+  @include mq('sm') {
+    flex-direction: row;
+  }
+}
+
+.flex-item {
+  width: 100%;
+  padding-right: 15px;
+  margin-bottom: 20px;
+
+  &:first-child {
+    margin-right: 15px;
+  }
+
+  @include mq('sm') {
+    width: 50%;
+
+    &:first-child {
+      border-right: 1px solid $primary-color;
+    }
+  }
+}

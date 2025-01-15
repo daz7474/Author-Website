@@ -1,0 +1,189 @@
+// Config
+
+// Font styles
+$font-url-primary: 'https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900';
+
+$font-url-secondary: 'https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap';
+
+// Import if google fonts URL is defined
+
+@if variable-exists(font-url-primary) {
+  @import url($font-url-primary);
+}
+
+@if variable-exists(font-url-secondary) {
+  @import url($font-url-secondary);
+}
+
+$font-primary: 'Poppins', sans-serif;
+$font-secondary: 'Abril Fatface', cursive;
+
+// Base colors
+
+$white: #fff;
+$light-grey: #ddd;
+$grey: #666;
+$dark-grey: #454555;
+$light-black: #272936;
+$light-black-hvr: #121318;
+$black: #000;
+$accent: #ccc;
+$quote-author: #a3a8ac;
+
+// Primary colors
+
+$primary-color: #1f2937;
+$primary-color-hvr: #314158;
+
+$primary-color-hvr2: #303d4e;
+
+$primary-alt-color: #495a70;
+$primary-alt-color-hvr: #435979;
+
+// Brand colors
+
+$primary-brand-color: #28bfab;
+$primary-brand-color-hvr: #27a897;
+
+$secondary-brand-color: #fbf5a2;
+$secondary-brand-color-hvr: #c7c276;
+
+$alt-color: #ff9900;
+$alt-color-hvr: #cc7e0a;
+
+$news-color: #f8f9fa;
+$news-color-hvr: #e2e6ea;
+
+$services-color: #f8f9fa;
+$services-color-hvr: #e2e6ea;
+
+$form-color: #f8f9fa;
+$form-color-hvr: #e2e6ea;
+
+$publish-color: #9BCF53;
+$publish-color-hvr: #afe266;
+
+$archive-color: #EFBC9B;
+$archive-color-hvr: #f7cbae;
+
+$delete-color: #FF204E;
+$delete-color-hvr: #fd4b6f;
+
+// Social colours for card map
+
+$social-colors: (
+  'facebook': #3b5998,
+  'youtube': #ff0000,
+);
+
+// Card colors for card map
+
+$service-colors: (
+  'bespoke': #67809f,
+  'IT': #4183d7,
+  'digital': #2ecc71,
+  'telecoms': #d64541,
+  'web': #926fb1,
+  'cyber': #f62459,
+  'developer': #ce4125,
+);
+
+// Service each loop
+
+@mixin services($map) {
+
+  @each $service,
+  $service-color in $service-colors {
+    &-#{$service} {
+
+      .card-icon,
+      .btn-card {
+        background-color: $service-color;
+        color: $white;
+      }
+
+      .service-nav-i {
+        display: block;
+        font-size: 23px;
+        padding-bottom: 10px;
+        color: $service-color;
+      }
+
+      .arrow-down {
+        border-color: $service-color transparent transparent transparent;
+      }
+
+      .icon-#{$service} {
+        color: $service-color;
+      }
+    }
+
+    &-#{$service}:hover {
+      color: $white;
+      background-color: $service-color;
+      border-color: $service-color;
+      top: -10px;
+
+      .card-icon {
+        background-color: $white;
+        color: $service-color;
+      }
+
+      .btn-card {
+        color: $service-color;
+        background-color: $white;
+      }
+
+      .service-nav-i,
+      .icon-#{$service} {
+        color: $white;
+      }
+    }
+  }
+}
+
+// Socials colour loop
+
+@mixin socials($map) {
+
+  @each $social,
+  $social-color in $social-colors {
+
+    &-#{$social}:hover {
+      color: $social-color;
+    }
+  }
+}
+
+// Breakpoints
+
+$breakpoints: (
+  '2xs': 375px,
+  'xs': 425px,
+  'sm': 768px,
+  'md': 992px,
+  'lg': 1260px,
+);
+
+// Media queries
+
+@mixin mq($break) {
+  $value: map-get($breakpoints, $break );
+  $sm: map-get($breakpoints, 'sm');
+
+  @if $value ==null {
+    @warn "`#{break}` is not a valid breakpoint name"
+  }
+
+  @else if $value <$sm {
+    @media (max-width: $value) {
+      @content;
+    }
+  }
+
+  @else {
+    @media (min-width: $value) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,170 @@
+// Buttons
+
+.btn {
+  display: inline-block;
+  font-size: 17px;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 35px;
+  background: $primary-color;
+  padding: 5px 15px;
+  margin-top: auto;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &-block {
+    display: block;
+  }
+
+  &-white {
+    background-color: $white;
+    color: $primary-color;
+
+    &:hover {
+      background-color: $light-grey;
+    }
+  }
+
+  // Brand button colors
+
+  &-primary {
+    background-color: $primary-color;
+
+    &:hover {
+      background-color: $primary-color-hvr;
+    }
+  }
+
+  &-primary-alt {
+    background-color: $primary-alt-color;
+
+    &:hover {
+      background-color: $primary-alt-color-hvr;
+    }
+  }
+
+  &-primary-brand {
+    background-color: $primary-brand-color;
+
+    &:hover {
+      background-color: $primary-brand-color-hvr;
+    }
+  }
+
+  &-secondary-brand {
+    background-color: $secondary-brand-color;
+    color: $primary-color;
+
+    &:hover {
+      background-color: $secondary-brand-color-hvr;
+    }
+  }
+
+  &-alt {
+    background-color: $alt-color;
+
+    &:hover {
+      background-color: $alt-color-hvr;
+    }
+  }
+
+  &-news {
+    background-color: $news-color;
+    color: #0fb8ff;
+    font-size: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+
+    &:hover {
+      background-color: $news-color-hvr;
+    }
+  }
+
+  &-services {
+    background-color: $services-color;
+    color: #7F27FF;
+    font-size: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+
+    &:hover {
+      background-color: $services-color-hvr;
+    }
+  }
+
+  &-form {
+    background-color: $form-color;
+    color: #e627ff;
+    font-size: 16px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+
+    &:hover {
+      background-color: $form-color-hvr;
+    }
+  }
+
+  &-edit {
+    background-color: $light-grey;
+
+    &:hover {
+      background-color: $accent;
+    }
+  }
+
+  &-publish {
+    margin-top: 0;
+    background-color: $publish-color;
+
+    &:hover {
+      background-color: $publish-color-hvr;
+    }
+  }
+
+  &-archive {
+    margin-top: 0;
+    background-color: $archive-color;
+
+    &:hover {
+      background-color: $archive-color-hvr;
+    }
+  }
+
+  &-delete {
+    margin-top: 0;
+    background-color: $delete-color;
+
+    &:hover {
+      background-color: $delete-color-hvr;
+    }
+  }
+
+  // Google button color
+
+  &-google {
+    background-color: #4387f6;
+
+    &:hover {
+      background-color: #3f75ca;
+    }
+  }
+
+  // Facebook button color
+
+  &-facebook {
+    color: #3b5998;
+
+    &:hover i {
+      color: #3b5998;
+    }
+  }
+
+  // Youtube button color
+
+  &-youtube {
+    color: #ff0000;
+
+    &:hover i {
+      color: #ff0000;
+    }
+  }
+}
