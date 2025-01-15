@@ -123,21 +123,3 @@ button {
   border: none;
   background: none;
 }
-
-// SVG
-
-svg {
-  margin-bottom: -25px;
-
-  @include mq("sm") {
-    margin-bottom: -70px;
-  }
-
-  @include mq("md") {
-    margin-bottom: -100px;
-  }
-
-  @include mq("lg") {
-    margin-bottom: -130px;
-  }
-}

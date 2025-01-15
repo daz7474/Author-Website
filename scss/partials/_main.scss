@@ -329,7 +329,10 @@ hr.hr {
 // Contact
 
 .contact {
+  display: flex;
+  justify-content: center;
   width: 100%;
+  margin: auto;
   
   & .contact-content {
     & h2 {
@@ -340,34 +343,58 @@ hr.hr {
     & p {
       text-align: center;
     }
-  }
-}
 
-// Flex Items
+    & .form-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
-.flex-container {
-  display: flex;
-  flex-direction: column;
+      & .form-text {
+        display: flex;
+        align-items: center;
+        background-color: $primary-brand-color;
+        color: $white;
+        font-size: 18px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 10px 10px 0 0;
 
-  @include mq('sm') {
-    flex-direction: row;
-  }
-}
+        & p {
+          margin: 0;
+        }
 
-.flex-item {
-  width: 100%;
-  padding-right: 15px;
-  margin-bottom: 20px;
+        @include mq('md') {
+          width: 40%;
+          border-radius: 10px 0 0 10px;
+        }
+      }
 
-  &:first-child {
-    margin-right: 15px;
-  }
+      & .form {
+        width: 100%;
+        padding: 20px;
+        border: 2px solid $light-grey;
+        border-radius: 0 0 10px 10px;
 
-  @include mq('sm') {
-    width: 50%;
+        & input, textarea, button {
+          border-bottom: 2px solid $light-grey;
+          font-size: 16px;
+          font-family: $font-primary;
+          margin-top: 20px;
+        }
 
-    &:first-child {
-      border-right: 1px solid $primary-color;
+        @include mq('md') {
+          width: 60%;
+          border-radius: 0 10px 10px 0;
+        }
+      }
+
+      @include mq('md') {
+        flex-direction: row;
+      }
     }
+  }
+
+  @include mq('md') {
+    width: 800px;
   }
 }
