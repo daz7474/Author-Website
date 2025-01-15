@@ -663,7 +663,7 @@ hr.hr {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
   width: 70%;
   margin: auto;
 }
@@ -672,25 +672,18 @@ hr.hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: auto;
-  margin: 10px;
+  width: 25%;
+  padding: 10px;
 }
 .books .book-items .book-img-container img {
   width: 100%;
-  height: 100%;
   object-fit: contain;
 }
-.books .book-items .book-img-container .buy-btn {
-  margin-top: 10px;
+.books .book-items .book-img-container p {
+  margin: 10px 0;
 }
 .books .book-items .book-img-container .buy-btn p {
   margin: 0;
-}
-@media (min-width: 992px) {
-  .books .book-items .book-img-container {
-    width: 50%;
-  }
 }
 @media (min-width: 992px) {
   .books .book-items {
