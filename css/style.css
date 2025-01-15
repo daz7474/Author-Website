@@ -266,6 +266,7 @@ svg {
 header {
   position: relative;
   background-color: #fff;
+  border-bottom: 2px solid #ddd;
 }
 
 .header {
@@ -273,7 +274,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 80px;
   padding: 0 20px;
   z-index: 99;
 }
@@ -546,7 +547,7 @@ hr.hr {
     margin-bottom: 0;
   }
 }
-.hero .item .item-content {
+.hero .item .hero-item-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -554,31 +555,36 @@ hr.hr {
   width: 100%;
   color: #272936;
 }
-.hero .item .item-content h2 {
+.hero .item .hero-item-content .subheading {
+  font-size: 18px;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.hero .item .hero-item-content h2 {
   font-size: 32px;
-  color: #272936 !important;
   text-align: center;
 }
 @media (min-width: 768px) {
-  .hero .item .item-content h2 {
+  .hero .item .hero-item-content h2 {
     font-size: 42px;
   }
 }
 @media (min-width: 992px) {
-  .hero .item .item-content h2 {
+  .hero .item .hero-item-content h2 {
     font-size: 52px;
   }
 }
 @media (min-width: 992px) {
-  .hero .item .item-content p {
+  .hero .item .hero-item-content p {
     font-size: 16px;
   }
 }
-.hero .item .item-content .buy-btn p {
+.hero .item .hero-item-content .buy-btn p {
   margin: 0;
 }
 @media (min-width: 992px) {
-  .hero .item .item-content {
+  .hero .item .hero-item-content {
     width: 50%;
     margin: 0 50px;
   }
@@ -586,6 +592,7 @@ hr.hr {
 @media (min-width: 992px) {
   .hero .item {
     flex-direction: row;
+    padding-top: 50px;
   }
 }
 @media (min-width: 992px) {
@@ -606,11 +613,10 @@ hr.hr {
 .item-content .subheading {
   font-size: 18px;
   text-decoration: underline;
-  margin: 0;
+  margin-bottom: 15px;
 }
 .item-content h2 {
   font-size: 32px;
-  color: #272936 !important;
 }
 @media (min-width: 992px) {
   .item-content p {
@@ -634,11 +640,12 @@ hr.hr {
 .about-me .about-img-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 .about-me .about-img-container img {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   object-fit: contain;
 }
 @media (min-width: 992px) {
@@ -648,6 +655,49 @@ hr.hr {
 }
 @media (min-width: 992px) {
   .about-me {
+    flex-direction: row;
+  }
+}
+
+.books .book-content h2 {
+  font-size: 32px;
+  text-align: center;
+}
+.books .book-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+.books .book-items .book-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  margin: 10px;
+}
+.books .book-items .book-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.books .book-items .book-img-container .buy-btn {
+  margin-top: 10px;
+}
+.books .book-items .book-img-container .buy-btn p {
+  margin: 0;
+}
+@media (min-width: 992px) {
+  .books .book-items .book-img-container {
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .books .book-items {
     flex-direction: row;
   }
 }
