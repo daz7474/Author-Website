@@ -322,6 +322,19 @@ hr.hr {
   }
 }
 
+// Contact
+
+.contact {
+  width: 100%;
+  
+  & .contact-content {
+    & h2 {
+      font-size: 32px;
+      text-align: center;
+    }
+  }
+}
+
 // Flex Items
 
 .flex-container {

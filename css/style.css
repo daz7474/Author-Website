@@ -722,6 +722,14 @@ hr.hr {
   }
 }
 
+.contact {
+  width: 100%;
+}
+.contact .contact-content h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
