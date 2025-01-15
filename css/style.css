@@ -468,6 +468,14 @@ hr.hr {
   padding-bottom: 50px;
 }
 
+.section-top {
+  padding-top: 50px;
+}
+
+.section-bottom {
+  padding-bottom: 50px;
+}
+
 .link {
   color: #28bfab;
 }
