@@ -680,7 +680,7 @@ hr.hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 25%;
+  width: 100%;
   padding: 10px;
 }
 .books .book-items .book-img-container img {
@@ -692,6 +692,11 @@ hr.hr {
 }
 .books .book-items .book-img-container .buy-btn p {
   margin: 0;
+}
+@media (min-width: 992px) {
+  .books .book-items .book-img-container {
+    width: 25%;
+  }
 }
 @media (min-width: 992px) {
   .books .book-items {

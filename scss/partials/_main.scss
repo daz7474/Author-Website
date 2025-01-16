@@ -303,7 +303,7 @@ hr.hr {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 25%;
+      width: 100%;
       padding: 10px;
 
       & img {
@@ -317,6 +317,10 @@ hr.hr {
 
       & .buy-btn p {
         margin: 0;
+      }
+
+      @include mq('md') {
+        width: 25%;
       }
     }
 
