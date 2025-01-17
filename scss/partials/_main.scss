@@ -379,8 +379,14 @@ hr.hr {
         border: 2px solid $light-grey;
         border-radius: 0 0 10px 10px;
 
-        & input, textarea, button {
+        & input, textarea {
           border-bottom: 2px solid $light-grey;
+          font-size: 16px;
+          font-family: $font-primary;
+          margin-top: 20px;
+        }
+
+        & button {
           font-size: 16px;
           font-family: $font-primary;
           margin-top: 20px;

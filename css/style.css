@@ -747,8 +747,13 @@ hr.hr {
   border: 2px solid #ddd;
   border-radius: 0 0 10px 10px;
 }
-.contact .contact-content .form-container .form input, .contact .contact-content .form-container .form textarea, .contact .contact-content .form-container .form button {
+.contact .contact-content .form-container .form input, .contact .contact-content .form-container .form textarea {
   border-bottom: 2px solid #ddd;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+}
+.contact .contact-content .form-container .form button {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   margin-top: 20px;
